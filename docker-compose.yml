@@ -25,11 +25,11 @@ services:
       - RAILS_MASTER_KEY=${RAILS_MASTER_KEY}
     volumes:
       - app-storage:/rails/storage
-    depends_on:
-      - db
+    # depends_on:
+    #   - db
     ports:
       - "3000:3000"
 
-volumes:
-  postgres_data: {}
-  app-storage: {}
+# volumes:
+#   postgres_data: {}
+#   app-storage: {}
